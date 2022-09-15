@@ -9,6 +9,7 @@
   overflow: hidden;
   cursor: pointer;
   letter-spacing: 2px;
+  background-color: transparent;
 }
 
 .btn .text {
