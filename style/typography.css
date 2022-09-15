@@ -1,0 +1,125 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--secondary-font);
+  color:  var(--secondary-color);
+  line-height: 1em;
+  position: relative;
+}
+
+h1 {
+  font-size:  5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size:  4em;
+}
+
+h3 {
+  font-size:  2.5em;
+}
+
+h4 {
+  font-size:  2em;
+}
+
+h5 {
+  font-size:  1.5em;
+}
+
+h6 {
+  font-size:  1.25em;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+h1 span i,
+h2 span i,
+h3 span i,
+h4 span i,
+h5 span i,
+h6 span i {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  left: 3px;
+  top: 3px;
+  color: var(--alt-color);
+  position: absolute;
+}
+
+p {
+  color: var(--primary-color);
+  position: relative;
+}
+
+a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+h1.coded {
+  padding: 15px;
+  display: inline-block;
+}
+
+p.coded {
+  padding: 30px 30px 30px 15px;
+}
+
+p.spaced {
+  letter-spacing: 4px;
+}
+
+h1.coded:before,
+p.coded:before,
+h1.coded:after,
+p.coded:after {
+  color: #8d8d8d;
+  position: absolute;
+  left: 0;
+  font-family: var(--alt-font);
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  opacity: .5;
+  letter-spacing: 2px;
+}
+
+h1.coded:before,
+p.coded:before {
+  bottom: calc(100% - 25px);
+}
+
+h1.coded:after,
+p.coded:after {
+  top: calc(100% - 25px);
+}
+
+h1.coded:before {
+  content: "<h1>";
+}
+
+p.coded:before {
+  content: "<p>";
+}
+
+h1.coded:after {
+  top: auto;
+  bottom: 0;
+  left: calc(100% + 15px);
+  content: "</h1>";
+}
+
+p.coded:after {
+  content: "</p>";
+}

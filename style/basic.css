@@ -1,0 +1,372 @@
+.main {
+  position: relative;
+  background-image: url(../img/texture.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+section:before,
+section:after,
+form.coded:before,
+form.coded:after {
+  color: #8d8d8d;
+  position: absolute;
+  font-family: var(--alt-font);
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  opacity: .5;
+  letter-spacing: 2px;
+}
+
+section:before,
+section:after {
+  left: 300px;
+}
+
+section:before {
+  content: "<section>";
+  top: 25px;
+}
+
+section:after {
+  content: "</section>";
+  bottom: 25px;
+}
+
+form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+form.coded {
+  padding: 45px 0 60px 0;
+}
+
+form.coded:before,
+form.coded:after {
+  left: 0;
+}
+
+
+form.coded:before {
+  content: "<form>";
+  top: 25px;
+}
+
+form.coded:after {
+  content: "</form>";
+  bottom: 25px;
+}
+
+section .text-bg {
+  position: absolute;
+  bottom: -.25em;
+  right: 0;
+  text-align: right;
+  font-size: 15em;
+  font-family: var(--secondary-font);
+  color: rgba(0, 0, 0, .05);
+  z-index: 1;
+}
+
+section .btn {
+  margin-top: 25px;
+}
+
+section .content {
+  padding: 100px 50px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+section .content .skills .skill {
+  position: relative;
+}
+
+section .content .skills .skill:nth-child(n+2) {
+  margin-top: 15px;
+}
+
+section .content .skills .skill p {
+  font-weight: 700;
+}
+
+section .content .skills .skill .skill-bar {
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #ddd;
+}
+
+section .content .skills .skill .skill-bar:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 10;
+}
+
+section .content .skills .skill.front-end .skill-bar:before {
+  background-color: var(--secondary-color);
+  width: 90%;
+}
+
+section .content .skills .skill.back-end .skill-bar:before {
+  background-color: var(--alt-color);
+  width: 50%;
+}
+
+section .content .skills .skill.html-css-js .skill-bar:before {
+  background-color: #787112;
+  width: 80%;
+}
+
+section .content .skills .skill.php .skill-bar:before {
+  background-color: #9E3AC1;
+  width: 60%;
+}
+
+section .content .skills .skill.ruby-on-rails .skill-bar:before {
+  background-color: #d30001;
+  width: 75%;
+}
+
+section#skills,
+section#contact {
+  flex-direction: row;
+}
+
+section#skills .content,
+section#contact .content {
+  width: 50%;
+}
+
+section#work .content:nth-of-type(n+2) {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section#work .portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section#work .portfolio .job {
+  float: left;
+  width: 20%;
+  height: 15vw;
+  position: relative;
+  overflow: hidden;
+}
+
+section#work .portfolio .job.jovem-programador:before {
+  background-image: url("../img/portfolio/jovem_programador.jpg");
+}
+
+section#work .portfolio .job.gbg-sjc:before {
+  background-image: url("../img/portfolio/gbg_sjc.jpg");
+}
+
+section#work .portfolio .job.startup-vale:before {
+  background-image: url("../img/portfolio/startupvale.jpg");
+}
+
+section#work .portfolio .job.fuston:before {
+  background-image: url("../img/portfolio/fuston.jpg");
+}
+
+section#work .portfolio .job.laboratorio-biociencia:before {
+  background-image: url("../img/portfolio/laboratorio_biociencia.jpg");
+}
+
+section#work .portfolio .job.investidor-rural:before {
+  background-image: url("../img/portfolio/investidor_rural.jpg");
+}
+
+section#work .portfolio .job.codigo-girls:before {
+  background-image: url("../img/portfolio/codigo_girls.jpg");
+}
+
+section#work .portfolio .job.notecomm:before {
+  background-image: url("../img/portfolio/notecomm.jpg");
+}
+
+section#work .portfolio .job.meuclube:before {
+  background-image: url("../img/portfolio/meuclube.jpg");
+}
+
+section#work .portfolio .job.birco:before {
+  background-image: url("../img/portfolio/birco.jpg");
+}
+
+section#work .portfolio .job:before,
+section#work .portfolio .job:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#work .portfolio .job:before {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section#work .portfolio .job:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  opacity: 1;
+}
+
+section#work .portfolio .job p {
+  color: #ffffff;
+  opacity: 0;
+  z-index: 4;
+  text-align: center;
+  font-size: 1em;
+  padding: 15px 25px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+}
+
+section#work .portfolio .job p:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: solid 10px var(--alt-color);
+  border-bottom: solid 10px var(--alt-color);
+  border-top: solid 10px transparent;
+  border-left: solid 10px transparent;
+}
+
+section#work .portfolio .job:hover:before {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+}
+
+section#work .portfolio .job:hover p {
+  opacity: 1;
+}
+
+section#work .portfolio .job:hover:after {
+  opacity: 0;
+}
+
+section#contact .form {
+  margin-top: -15px;
+}
+
+section#contact .form,
+section#contact .form .input,
+section#contact .form .input input,
+section#contact .form .input textarea {
+  width: 100%;
+}
+
+section#contact .form .input,
+section#contact .form .options {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+
+section#contact .form:after,
+section#contact .form .input:after,
+section#contact .form .options:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+section#contact .form .input input,
+section#contact .form .input textarea {
+  padding: 15px 20px;
+  background-color: #ddd;
+  border: none;
+  resize: none;
+}
+
+section#contact .form .name-input,
+section#contact .form .email-input {
+  width: calc(50% - 7.5px);
+}
+
+section#contact .form .email-input {
+  margin-left: 15px;
+}
+
+section#contact .form .options {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section#contact .additional-info .box {
+  padding: 50px 25px;
+  background-color: var(--secondary-color);
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+section#contact .additional-info .box:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: solid 10px var(--alt-color);
+  border-bottom: solid 10px var(--alt-color);
+  border-top: solid 10px transparent;
+  border-left: solid 10px transparent;
+}
+
+section#contact .additional-info .box:nth-of-type(n+2) {
+  margin-top: 30px;
+}
+
+section#contact .additional-info .box p {
+  text-align: center;
+  color: #ffffff;
+}
+
+section#contact .additional-info .box p i {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+}

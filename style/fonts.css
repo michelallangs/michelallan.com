@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Staatliches;
+  src: url(../fonts/Staatliches.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand.ttf) format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Combo;
+  src: url(../fonts/Combo.ttf) format("truetype");
+  font-style: normal;
+}
