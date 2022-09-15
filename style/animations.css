@@ -1,0 +1,464 @@
+@-webkit-keyframes rotateAround{
+  0% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+
+  12.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    background-color:#17335A
+  }
+
+  25% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:0;
+    transform:translateX(-100%);
+    background-color:#0072ff
+  }
+
+  37.5% {
+    width:10px;
+    height:50%;
+    left:100%;
+    bottom:50%;
+    transform:translateY(50%) translateX(-100%);
+    background-color:#00c6ff
+  }
+
+  50% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-100%);
+    background-color:#fc3
+  }
+
+  62.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-50%);
+    background-color:#ffb347
+  }
+
+  75% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:100%;
+    transform:translateY(100%) translateX(0);
+    background-color:#7b4397
+  }
+  
+  87.5% {
+    width:10px;
+    height:50%;
+    left:0;
+    bottom:50%;
+    transform:translateY(50%) translateX(0);
+    background-color:#dc2430
+  }
+  
+  100% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+}
+
+@-moz-keyframes rotateAround{
+  0% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+
+  12.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    background-color:#17335A
+  }
+
+  25% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:0;
+    transform:translateX(-100%);
+    background-color:#0072ff
+  }
+
+  37.5% {
+    width:10px;
+    height:50%;
+    left:100%;
+    bottom:50%;
+    transform:translateY(50%) translateX(-100%);
+    background-color:#00c6ff
+  }
+
+  50% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-100%);
+    background-color:#fc3
+  }
+
+  62.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-50%);
+    background-color:#ffb347
+  }
+
+  75% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:100%;
+    transform:translateY(100%) translateX(0);
+    background-color:#7b4397
+  }
+  
+  87.5% {
+    width:10px;
+    height:50%;
+    left:0;
+    bottom:50%;
+    transform:translateY(50%) translateX(0);
+    background-color:#dc2430
+  }
+  
+  100% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+}
+
+@-ms-keyframes rotateAround{
+  0% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+
+  12.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    background-color:#17335A
+  }
+
+  25% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:0;
+    transform:translateX(-100%);
+    background-color:#0072ff
+  }
+
+  37.5% {
+    width:10px;
+    height:50%;
+    left:100%;
+    bottom:50%;
+    transform:translateY(50%) translateX(-100%);
+    background-color:#00c6ff
+  }
+
+  50% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-100%);
+    background-color:#fc3
+  }
+
+  62.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-50%);
+    background-color:#ffb347
+  }
+
+  75% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:100%;
+    transform:translateY(100%) translateX(0);
+    background-color:#7b4397
+  }
+  
+  87.5% {
+    width:10px;
+    height:50%;
+    left:0;
+    bottom:50%;
+    transform:translateY(50%) translateX(0);
+    background-color:#dc2430
+  }
+  
+  100% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+}
+
+@-o-keyframes rotateAround{
+  0% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+
+  12.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    background-color:#17335A
+  }
+
+  25% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:0;
+    transform:translateX(-100%);
+    background-color:#0072ff
+  }
+
+  37.5% {
+    width:10px;
+    height:50%;
+    left:100%;
+    bottom:50%;
+    transform:translateY(50%) translateX(-100%);
+    background-color:#00c6ff
+  }
+
+  50% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-100%);
+    background-color:#fc3
+  }
+
+  62.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-50%);
+    background-color:#ffb347
+  }
+
+  75% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:100%;
+    transform:translateY(100%) translateX(0);
+    background-color:#7b4397
+  }
+  
+  87.5% {
+    width:10px;
+    height:50%;
+    left:0;
+    bottom:50%;
+    transform:translateY(50%) translateX(0);
+    background-color:#dc2430
+  }
+  
+  100% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+}
+
+@keyframes rotateAround{
+  0% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+
+  12.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    background-color:#17335A
+  }
+
+  25% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:0;
+    transform:translateX(-100%);
+    background-color:#0072ff
+  }
+
+  37.5% {
+    width:10px;
+    height:50%;
+    left:100%;
+    bottom:50%;
+    transform:translateY(50%) translateX(-100%);
+    background-color:#00c6ff
+  }
+
+  50% {
+    width:10px;
+    height:10px;
+    left:100%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-100%);
+    background-color:#fc3
+  }
+
+  62.5% {
+    width:50%;
+    height:10px;
+    left:50%;
+    bottom:100%;
+    transform:translateY(100%) translateX(-50%);
+    background-color:#ffb347
+  }
+
+  75% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:100%;
+    transform:translateY(100%) translateX(0);
+    background-color:#7b4397
+  }
+  
+  87.5% {
+    width:10px;
+    height:50%;
+    left:0;
+    bottom:50%;
+    transform:translateY(50%) translateX(0);
+    background-color:#dc2430
+  }
+  
+  100% {
+    width:10px;
+    height:10px;
+    left:0;
+    bottom:0;
+    transform:translateY(0) translateX(0);
+    background-color:#614285
+  }
+}
+
+@-webkit-keyframes fadeInOut{
+  0%, 100%{
+    opacity:.5
+  }
+
+  50% {
+    opacity:1
+  }
+}
+
+@-moz-keyframes fadeInOut{
+  0%, 100%{
+    opacity:.5
+  }
+
+  50% {
+    opacity:1
+  }
+}
+
+@-o-keyframes fadeInOut{
+  0%, 100%{
+    opacity:.5
+  }
+
+  50% {
+    opacity:1
+  }
+}
+
+@-ms-keyframes fadeInOut{
+  0%, 100%{
+    opacity:.5
+  }
+
+  50% {
+    opacity:1
+  }
+}
+
+@keyframes fadeInOut{
+  0%, 100%{
+    opacity:.5
+  }
+
+  50% {
+    opacity:1
+  }
+}
