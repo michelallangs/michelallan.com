@@ -171,7 +171,7 @@
         <p class="coded">I'm open to freelance opportunities - both small or large projects. However, if you have any proposal, write me down below.</p>
 
         <div class="form">
-          <form onsubmit="sendEmail(); reset(); return false;" class="coded">
+          <form id="contact-form" class="coded">
             <div class="input name-input">
               <input type="text" name="name" id="name" placeholder="Name" required>
             </div>
@@ -211,22 +211,7 @@
   <script src="js/application.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/loading.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail(){
-      Email.send({
-        SecureToken: "7cc38297-0784-4df1-bdb2-d9dafec5df8f",
-        To: "michelallangs@gmail.com",
-        From: "michelallangs@gmail.com",
-        Subject: "Michel, entraram em contato com você!",
-        Body: "Name: " + document.getElementById("name").value +
-               "<br> Assunto: " + document.getElementById("subject").value +
-               "<br> E-mail: " + document.getElementById("email").value +
-               "<br> Mensagem: " + document.getElementById("message").value
-      }).then(
-        message => alert("Mensagem enviada com sucesso!")
-      );
-    }
-  </script>
+  <script src="js/smtp.js"></script>
+  <script src="js/smtp-config.js"></script>
 </body>
 </html>

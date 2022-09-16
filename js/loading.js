@@ -2,9 +2,9 @@ var ready;
 
 ready = function() {
   setTimeout(function(){
-    $(".loading").fadeOut()
-    $(".main").addClass("done")
-  }, 2000)
+    $(".loading").fadeOut();
+    $(".main").addClass("done");
+  }, 750)
 };
 
 $(document).ready(ready);
