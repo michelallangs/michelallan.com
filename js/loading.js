@@ -1,10 +1,8 @@
 var ready;
 
 ready = function() {
-  setTimeout(function(){
-    $(".loading").fadeOut();
-    $(".main").addClass("done");
-  }, 750)
+  $(".loading").fadeOut();
+  $(".main").addClass("done");
 };
 
 $(document).ready(ready);
