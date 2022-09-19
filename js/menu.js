@@ -5,6 +5,7 @@ ready = function() {
     e.preventDefault();
     e.stopPropagation();
 
+    $(".menu-btn").toggleClass("active");
     $(".menu").slideToggle();
   });
 
@@ -13,6 +14,7 @@ ready = function() {
 
     if (width < 992) {
       $(".menu").slideUp();
+      $(".menu-btn").removeClass("active");
     }
   })
 
