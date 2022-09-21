@@ -70,6 +70,51 @@
   opacity: 1;
 }
 
+.scroll-btn {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(237, 240, 240, .9);
+  position: fixed;
+  right: 40px;
+  bottom: 25px;
+  z-index: 999;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn.end-of-page {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.scroll-btn:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-bottom: solid 3px var(--primary-color);
+  border-right: solid 3px var(--primary-color);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  margin-top: -3px;
+}
+
+.scroll-btn:hover:before {
+  -o-animation: moveDown .75s ease-in-out infinite;
+  -ms-animation: moveDown .75s ease-in-out infinite;
+  -moz-animation: moveDown .75s ease-in-out infinite;
+  -webkit-animation: moveDown .75s ease-in-out infinite;
+  animation: moveDown .75s ease-in-out infinite;
+}
+
 section {
   width: 100%;
   min-height: 100vh;
@@ -175,6 +220,7 @@ section .content {
 section .content .skills {
   position: relative;
   padding-left: 15px;
+  margin-bottom: 50px;
 }
 
 section .content .skills .skill {

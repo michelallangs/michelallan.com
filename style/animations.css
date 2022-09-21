@@ -462,3 +462,53 @@
     opacity:1
   }
 }
+
+@-webkit-keyframes moveDown{
+  0%, 100%{
+    margin-top: -3px;
+  }
+
+  50% {
+    margin-top: 6px;
+  }
+}
+
+@-moz-keyframes moveDown{
+  0%, 100%{
+    margin-top: -3px;
+  }
+
+  50% {
+    margin-top: 6px;
+  }
+}
+
+@-o-keyframes moveDown{
+  0%, 100%{
+    margin-top: -3px;
+  }
+
+  50% {
+    margin-top: 6px;
+  }
+}
+
+@-ms-keyframes moveDown{
+  0%, 100%{
+    margin-top: -3px;
+  }
+
+  50% {
+    margin-top: 6px;
+  }
+}
+
+@keyframes moveDown{
+  0%, 100%{
+    margin-top: -3px;
+  }
+
+  50% {
+    margin-top: 6px;
+  }
+}

@@ -18,19 +18,30 @@ ready = function() {
     }
   })
 
-  $(".main").on( 'scroll', function(){
+  var fullPage = endOfPage = 0;
+
+  $("section").each(function(){ fullPage += $(this).outerHeight(); })
+
+  endOfPage = fullPage - $("section:last").outerHeight();
+
+  $(".main").on('scroll', function(){
+    $(".scroll-btn").removeClass("end-of-page");
     $(".menu ul li a").removeClass("active");
 
     $("section").each(function(){
       var top = $(this).offset().top,
-          sectionH = $(this).outerHeight()*(-1);
+          sectionH = $(this).outerHeight();
 
-      if (top < 1 && top > sectionH) {
+      if (top < 1 && top > sectionH*(-1)) {
         var currentSection = $(this).attr("id");
 
         $(".menu ul li a[href='#" + currentSection + "']").addClass("active");
       }
     })
+
+    if (endOfPage == $(".main").scrollTop()) {
+      $(".scroll-btn").addClass("end-of-page");
+    }
   });
 };
 
