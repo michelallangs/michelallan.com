@@ -55,12 +55,13 @@
 
 .main {
   position: relative;
-  background-image: url(../img/texture.jpg);
+  background-image: url(../img/texture2.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   opacity: 0;
 }
@@ -73,7 +74,6 @@ section {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
   padding-left: 250px;
@@ -84,7 +84,9 @@ section {
 section:before,
 section:after,
 form.coded:before,
-form.coded:after {
+form.coded:after,
+div.coded:before,
+div.coded:after {
   color: #8d8d8d;
   position: absolute;
   font-family: var(--alt-font);
@@ -121,7 +123,9 @@ form.coded {
 }
 
 form.coded:before,
-form.coded:after {
+form.coded:after,
+div.coded:before,
+div.coded:after {
   left: 0;
 }
 
@@ -134,6 +138,16 @@ form.coded:before {
 form.coded:after {
   content: "</form>";
   bottom: 25px;
+}
+
+div.coded:before {
+  content: "<div>";
+  bottom: calc(100% + 15px);
+}
+
+div.coded:after {
+  content: "</div>";
+  top: calc(100% + 25px);
 }
 
 section .text-bg {
@@ -152,10 +166,15 @@ section .btn {
 }
 
 section .content {
-  padding: 100px 50px;
+  padding: 25px 50px;
   width: 100%;
   position: relative;
   z-index: 2;
+}
+
+section .content .skills {
+  position: relative;
+  padding-left: 15px;
 }
 
 section .content .skills .skill {
@@ -174,7 +193,7 @@ section .content .skills .skill .skill-bar {
   width: 100%;
   height: 3px;
   margin-top: 5px;
-  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 section .content .skills .skill .skill-bar:before {
@@ -213,9 +232,9 @@ section .content .skills .skill.ruby-on-rails .skill-bar:before {
   width: 75%;
 }
 
-section#skills,
 section#contact {
   flex-direction: row;
+  align-items: center;
 }
 
 section#skills .content,
@@ -223,22 +242,13 @@ section#contact .content {
   width: 50%;
 }
 
-section#work .content:nth-of-type(n+2) {
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-section#work .portfolio:after {
-  content: "";
-  display: table;
-  clear: both;
+section#work .portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
 }
 
 section#work .portfolio .job {
-  float: left;
-  width: 20%;
-  height: 15vw;
   position: relative;
   overflow: hidden;
 }
@@ -283,8 +293,7 @@ section#work .portfolio .job.birco:before {
   background-image: url("../img/portfolio/birco.jpg");
 }
 
-section#work .portfolio .job:before,
-section#work .portfolio .job:after {
+section#work .portfolio .job:before {
   content: "";
   position: absolute;
   left: 0;
@@ -299,12 +308,6 @@ section#work .portfolio .job:before {
   z-index: 2;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-section#work .portfolio .job:after {
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 3;
-  opacity: 1;
 }
 
 section#work .portfolio .job p {
@@ -397,8 +400,6 @@ section#contact .form .options {
 }
 
 section#contact .additional-info .box {
-  padding: 50px 25px;
-  background-color: var(--secondary-color);
   width: 400px;
   max-width: 100%;
   margin: 0 auto;
@@ -421,6 +422,8 @@ section#contact .additional-info .box:nth-of-type(n+2) {
 }
 
 section#contact .additional-info .box p {
+  background-color: var(--secondary-color);
+  padding: 50px 25px;
   text-align: center;
   color: #ffffff;
 }

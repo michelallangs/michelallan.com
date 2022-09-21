@@ -116,6 +116,10 @@
     display: none;
   }
 
+  .main {
+    background-image: url(../img/texture.jpg);
+  }
+
   section {
     padding-left: 0;
     padding-top: 100px;
@@ -141,12 +145,18 @@
     font-size: 7.5em;
   }
 
-  section#work .portfolio .job {
-    width: 50%;
+  section#work .portfolio {
+    grid-template-columns: 1fr 1fr;
   }
 
   section#work .portfolio .job:after {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  section#work .portfolio {
+    grid-template-columns: 1fr;
   }
 }
 
