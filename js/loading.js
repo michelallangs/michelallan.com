@@ -1,7 +1,10 @@
 var ready;
 
 ready = function() {
-  $(".loading").fadeOut();
+  setTimeout(function(){
+    $(".loading").fadeOut();
+  }, 1000)
+
   $(".main").addClass("done");
 };
 
