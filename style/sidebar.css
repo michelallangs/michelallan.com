@@ -71,6 +71,10 @@
   text-align: left;
   font-weight: 700;
   color: #8d8d8d;
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 .sidebar .menu ul li a.active {
@@ -98,6 +102,10 @@
   opacity: .5;
   padding: 15px 25px 15px 15px;
   min-width: 50px;
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 .sidebar .menu ul li a:hover {

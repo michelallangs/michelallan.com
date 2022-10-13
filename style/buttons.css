@@ -40,6 +40,10 @@
   -webkit-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
   transform: skewX(-10deg);
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 .btn:hover .text {

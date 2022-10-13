@@ -1,9 +1,5 @@
 *, *:before, *:after {
   box-sizing: border-box;
-  transition: .24s cubic-bezier(.075,.82,.165,1);
-  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
-  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
-  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 *, html, body {
@@ -29,6 +25,10 @@ html, body {
 
 a {
   text-decoration: none;
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 strong {

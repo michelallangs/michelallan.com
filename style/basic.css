@@ -83,6 +83,10 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 .scroll-btn.end-of-page {
@@ -304,61 +308,66 @@ section#work .portfolio .job {
   overflow: hidden;
 }
 
-section#work .portfolio .job.jovem-programador:before {
+section#work .portfolio .job.jovem-programador:after {
   background-image: url("../img/portfolio/jovem_programador.jpg");
 }
 
-section#work .portfolio .job.gbg-sjc:before {
+section#work .portfolio .job.gbg-sjc:after {
   background-image: url("../img/portfolio/gbg_sjc.jpg");
 }
 
-section#work .portfolio .job.startup-vale:before {
+section#work .portfolio .job.startup-vale:after {
   background-image: url("../img/portfolio/startupvale.jpg");
 }
 
-section#work .portfolio .job.fuston:before {
+section#work .portfolio .job.fuston:after {
   background-image: url("../img/portfolio/fuston.jpg");
 }
 
-section#work .portfolio .job.laboratorio-biociencia:before {
+section#work .portfolio .job.laboratorio-biociencia:after {
   background-image: url("../img/portfolio/laboratorio_biociencia.jpg");
 }
 
-section#work .portfolio .job.investidor-rural:before {
+section#work .portfolio .job.investidor-rural:after {
   background-image: url("../img/portfolio/investidor_rural.jpg");
 }
 
-section#work .portfolio .job.codigo-girls:before {
+section#work .portfolio .job.codigo-girls:after {
   background-image: url("../img/portfolio/codigo_girls.jpg");
 }
 
-section#work .portfolio .job.notecomm:before {
+section#work .portfolio .job.notecomm:after {
   background-image: url("../img/portfolio/notecomm.jpg");
 }
 
-section#work .portfolio .job.meuclube:before {
+section#work .portfolio .job.meuclube:after {
   background-image: url("../img/portfolio/meuclube.jpg");
 }
 
-section#work .portfolio .job.birco:before {
+section#work .portfolio .job.birco:after {
   background-image: url("../img/portfolio/birco.jpg");
 }
 
 section#work .portfolio .job:before {
+  content: "";
+  display: inline-block;
+  margin-top: 100%;
+}
+
+section#work .portfolio .job:after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-section#work .portfolio .job:before {
-  width: 100%;
-  height: 100%;
   z-index: 2;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: .24s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: .24s cubic-bezier(.075,.82,.165,1);
+  -o-transition: .24s cubic-bezier(.075,.82,.165,1);
 }
 
 section#work .portfolio .job p {
@@ -388,7 +397,7 @@ section#work .portfolio .job p:after {
   border-left: solid 10px transparent;
 }
 
-section#work .portfolio .job:hover:before {
+section#work .portfolio .job:hover:after {
   transform: scale(1.15);
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
@@ -396,10 +405,6 @@ section#work .portfolio .job:hover:before {
 
 section#work .portfolio .job:hover p {
   opacity: 1;
-}
-
-section#work .portfolio .job:hover:after {
-  opacity: 0;
 }
 
 section#contact .form {
