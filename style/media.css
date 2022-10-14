@@ -14,6 +14,19 @@
     height: 0;
   }
 
+  section,
+  *.coded {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  section:before,
+  section:after,
+  *.coded:before,
+  *.coded:after {
+    display: none;
+  }
+
   h1 {
     font-size: 4em;
   }
@@ -26,7 +39,6 @@
     padding: 25px;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #edf0f0;
   }
 
   .sidebar .sidebar-top-content {
@@ -110,7 +122,12 @@
     position: absolute;
     top: 100px;
     left: 0;
-    background-color: #edf0f0;
+    background: var(--purple);
+    background: -webkit-linear-gradient(left,var(--purple),var(--dark-blue));
+    background: -o-linear-gradient(right,var(--purple),var(--dark-blue));
+    background: -moz-linear-gradient(right,var(--purple),var(--dark-blue));
+    background: linear-gradient(to right,var(--purple),var(--dark-blue));
+    box-shadow: 0px 2px 0px 0px rgb(0 0 0 / 15%);
   }
 
   .sidebar .menu,
@@ -118,8 +135,8 @@
     display: none;
   }
 
-  .main {
-    background-image: url(../img/texture.webp);
+  .sidebar .menu ul {
+    flex-direction: column;
   }
 
   .scroll-btn {
@@ -145,6 +162,10 @@
 
   section .content:nth-of-type(n+2) {
     padding-top: 0;
+  }
+
+  section .content .skills {
+    width: 100%;
   }
 
   section .text-bg {

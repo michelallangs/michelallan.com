@@ -5,7 +5,11 @@
   height: 100%;
   position: fixed;
   z-index: 99999;
-  background-color: #edf0f0;
+  background: var(--purple);
+  background: -webkit-linear-gradient(left,var(--purple),var(--dark-blue));
+  background: -o-linear-gradient(right,var(--purple),var(--dark-blue));
+  background: -moz-linear-gradient(right,var(--purple),var(--dark-blue));
+  background: linear-gradient(to right,var(--purple),var(--dark-blue));
 }
 
 .loading.done {
@@ -55,10 +59,11 @@
 
 .main {
   position: relative;
-  background-image: url(../img/texture2.webp);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--purple);
+  background: -webkit-linear-gradient(left,var(--purple),var(--dark-blue));
+  background: -o-linear-gradient(right,var(--purple),var(--dark-blue));
+  background: -moz-linear-gradient(right,var(--purple),var(--dark-blue));
+  background: linear-gradient(to right,var(--purple),var(--dark-blue));
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -101,8 +106,8 @@
   content: "";
   width: 12px;
   height: 12px;
-  border-bottom: solid 3px var(--primary-color);
-  border-right: solid 3px var(--primary-color);
+  border-bottom: solid 3px var(--dark-blue);
+  border-right: solid 3px var(--dark-blue);
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -122,12 +127,16 @@
 section {
   width: 100%;
   min-height: 100vh;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 250px;
   position: relative;
   overflow: hidden;
+}
+
+section:nth-child(2n+2) {
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
 section:before,
@@ -147,12 +156,12 @@ div.coded:after {
 
 section:before,
 section:after {
-  left: 300px;
+  left: 50px;
 }
 
 section:before {
   content: "<section>";
-  top: 25px;
+  top: 175px;
 }
 
 section:after {
@@ -200,7 +209,7 @@ div.coded:after {
 
 section .text-bg {
   position: absolute;
-  bottom: -.25em;
+  bottom: -.5em;
   right: 0;
   text-align: right;
   font-size: 15em;
@@ -218,12 +227,16 @@ section .content {
   width: 100%;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section .content .skills {
   position: relative;
   padding-left: 15px;
   margin-bottom: 50px;
+  width: 50%;
 }
 
 section .content .skills .skill {
@@ -286,11 +299,6 @@ section#contact {
   align-items: center;
 }
 
-section#skills .content,
-section#contact .content {
-  width: 50%;
-}
-
 section#skills .content:nth-of-type(n+2),
 section#work .content:nth-of-type(n+2) {
   padding-top: 0;
@@ -299,7 +307,7 @@ section#work .content:nth-of-type(n+2) {
 section#work .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
+  padding: 0;
 }
 
 section#work .portfolio .job {
@@ -376,7 +384,7 @@ section#work .portfolio .job p {
   text-align: center;
   font-size: 1em;
   padding: 15px 25px;
-  background-color: var(--secondary-color);
+  background-color: var(--purple);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -435,7 +443,7 @@ section#contact .form .options:after {
 section#contact .form .input input,
 section#contact .form .input textarea {
   padding: 15px 20px;
-  background-color: #ddd;
+  background-color: rgba(0, 0, 0, .125);
   border: none;
   resize: none;
 }
@@ -477,7 +485,7 @@ section#contact .additional-info .box:nth-of-type(n+2) {
 }
 
 section#contact .additional-info .box p {
-  background-color: var(--secondary-color);
+  background-color: var(--purple);
   padding: 50px 25px;
   text-align: center;
   color: #ffffff;

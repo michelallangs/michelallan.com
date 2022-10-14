@@ -1,7 +1,10 @@
 :root {
-  --primary-color: #515152;
-  --secondary-color: #6b45c5;
-  --alt-color: #C4BB45;
+  --primary-color: #e4e4e4;
+  --secondary-color: #f6f6f6;
+  --alt-color: #ffbf00;
+
+  --dark-blue: #17335A;
+  --purple: #614285;
 
   --default-font: "Quicksand";
   --secondary-font: "Staatliches";

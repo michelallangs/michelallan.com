@@ -49,12 +49,7 @@
 }
 
 .btn:hover .text {
-  color: #fff;
-}
-
-.btn:hover:after {
-  border-right: solid 3px var(--alt-color);
-  border-bottom: solid 3px var(--alt-color);
+  color: var(--purple);
 }
 
 .btn:hover .bg {
