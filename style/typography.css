@@ -36,25 +36,11 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-  color: var(--secondary-color);
+  color: var(--alt-color);
   font-family: var(--secondary-font);
   position: relative;
   display: inline-block;
   margin-right: 5px;
-}
-
-h1 span i,
-h2 span i,
-h3 span i,
-h4 span i,
-h5 span i,
-h6 span i {
-  font-family: var(--secondary-font);
-  font-style: normal;
-  left: 3px;
-  top: 3px;
-  color: var(--alt-color);
-  position: absolute;
 }
 
 p {
