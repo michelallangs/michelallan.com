@@ -55,7 +55,7 @@
 
 .main {
   position: relative;
-  background-image: url(../img/texture2.jpg);
+  background-image: url(../img/texture2.webp);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,43 +308,43 @@ section#work .portfolio .job {
 }
 
 section#work .portfolio .job.jovem-programador:after {
-  background-image: url("../img/portfolio/jovem_programador.jpg");
+  background-image: url("../img/portfolio/jovem_programador.webp");
 }
 
 section#work .portfolio .job.gbg-sjc:after {
-  background-image: url("../img/portfolio/gbg_sjc.jpg");
+  background-image: url("../img/portfolio/gbg_sjc.webp");
 }
 
 section#work .portfolio .job.startup-vale:after {
-  background-image: url("../img/portfolio/startupvale.jpg");
+  background-image: url("../img/portfolio/startupvale.webp");
 }
 
 section#work .portfolio .job.fuston:after {
-  background-image: url("../img/portfolio/fuston.jpg");
+  background-image: url("../img/portfolio/fuston.webp");
 }
 
 section#work .portfolio .job.laboratorio-biociencia:after {
-  background-image: url("../img/portfolio/laboratorio_biociencia.jpg");
+  background-image: url("../img/portfolio/laboratorio_biociencia.webp");
 }
 
 section#work .portfolio .job.investidor-rural:after {
-  background-image: url("../img/portfolio/investidor_rural.jpg");
+  background-image: url("../img/portfolio/investidor_rural.webp");
 }
 
 section#work .portfolio .job.codigo-girls:after {
-  background-image: url("../img/portfolio/codigo_girls.jpg");
+  background-image: url("../img/portfolio/codigo_girls.webp");
 }
 
 section#work .portfolio .job.notecomm:after {
-  background-image: url("../img/portfolio/notecomm.jpg");
+  background-image: url("../img/portfolio/notecomm.webp");
 }
 
 section#work .portfolio .job.meuclube:after {
-  background-image: url("../img/portfolio/meuclube.jpg");
+  background-image: url("../img/portfolio/meuclube.webp");
 }
 
 section#work .portfolio .job.birco:after {
-  background-image: url("../img/portfolio/birco.jpg");
+  background-image: url("../img/portfolio/birco.webp");
 }
 
 section#work .portfolio .job:before {

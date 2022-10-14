@@ -36,6 +36,7 @@
 
   .sidebar .sidebar-top-content .logo img {
     width: 5em;
+    height: 2.5em;
   }
 
   .menu-btn {
@@ -118,7 +119,7 @@
   }
 
   .main {
-    background-image: url(../img/texture.jpg);
+    background-image: url(../img/texture.webp);
   }
 
   .scroll-btn {
