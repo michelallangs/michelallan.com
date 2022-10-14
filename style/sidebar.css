@@ -105,3 +105,8 @@
 .sidebar .social a:hover {
   filter: brightness(200%);
 }
+
+.sidebar .social a img {
+  width: 30px;
+  height: 30px;
+}

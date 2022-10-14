@@ -38,7 +38,7 @@
     height: 100px;
     padding: 25px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .sidebar .sidebar-top-content {
@@ -51,6 +51,30 @@
     height: 1.925em;
   }
 
+  .sidebar .menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: var(--purple);
+    background: -webkit-linear-gradient(left,var(--purple),var(--dark-blue));
+    background: -o-linear-gradient(right,var(--purple),var(--dark-blue));
+    background: -moz-linear-gradient(right,var(--purple),var(--dark-blue));
+    background: linear-gradient(to right,var(--purple),var(--dark-blue));
+    box-shadow: 0px 2px 0px 0px rgb(0 0 0 / 15%);
+  }
+
+  .sidebar .menu {
+    display: none;
+  }
+
+  .sidebar .menu ul {
+    flex-direction: column;
+  }
+
+  .sidebar .social {
+    padding-right: 55px;
+  } 
+
   .menu-btn {
     position: absolute;
     right: 25px;
@@ -59,7 +83,8 @@
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -76,6 +101,10 @@
 
   .menu-btn.active span:before,
   .menu-btn.active span:after {
+    transition: .25s ease-in-out;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
     top: 0;
   }
 
@@ -116,27 +145,6 @@
 
   .menu-btn span:after {
     top: 8px;
-  }
-
-  .sidebar .menu {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background: var(--purple);
-    background: -webkit-linear-gradient(left,var(--purple),var(--dark-blue));
-    background: -o-linear-gradient(right,var(--purple),var(--dark-blue));
-    background: -moz-linear-gradient(right,var(--purple),var(--dark-blue));
-    background: linear-gradient(to right,var(--purple),var(--dark-blue));
-    box-shadow: 0px 2px 0px 0px rgb(0 0 0 / 15%);
-  }
-
-  .sidebar .menu,
-  .sidebar .social {
-    display: none;
-  }
-
-  .sidebar .menu ul {
-    flex-direction: column;
   }
 
   .scroll-btn {

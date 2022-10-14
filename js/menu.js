@@ -22,7 +22,7 @@ ready = function() {
 
   $("section").each(function(){ fullPage += $(this).outerHeight(); })
 
-  endOfPage = fullPage - $("section:last").outerHeight();
+  endOfPage = Math.trunc(fullPage - $("section:last").outerHeight());
 
   $(".main").on('scroll', function(){
     $(".scroll-btn").removeClass("end-of-page");
@@ -39,7 +39,7 @@ ready = function() {
       }
     })
 
-    if (endOfPage == $(".main").scrollTop()) {
+    if ($(".main").scrollTop() >= endOfPage) {
       $(".scroll-btn").addClass("end-of-page");
     }
   });
