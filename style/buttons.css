@@ -1,6 +1,4 @@
 .btn {
-  font-size: .9rem;
-  font-weight: bold;
   padding: 10px 25px;
   display: inline-block;
   border: solid 1px var(--secondary-color);
@@ -16,6 +14,9 @@
   position: relative;
   z-index: 10;
   color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: .9rem;
 }
 
 .btn:after {
@@ -27,6 +28,7 @@
   border-bottom: solid 3px var(--secondary-color);
   border-top: solid 3px transparent;
   border-left: solid 3px transparent;
+  z-index: 11;
 }
 
 .btn .bg {
@@ -48,6 +50,11 @@
 
 .btn:hover .text {
   color: #fff;
+}
+
+.btn:hover:after {
+  border-right: solid 3px var(--alt-color);
+  border-bottom: solid 3px var(--alt-color);
 }
 
 .btn:hover .bg {

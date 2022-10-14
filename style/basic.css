@@ -141,8 +141,7 @@ div.coded:after {
   font-family: var(--alt-font);
   font-size: 1rem;
   font-weight: 700;
-  font-style: italic;
-  opacity: .5;
+  opacity: .25;
   letter-spacing: 2px;
 }
 
